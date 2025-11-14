@@ -20,8 +20,9 @@
 						<th>Amet</th>
 						<th>Tunnitasu</th>
 						<th>Kuupäev</th>
+						<th>Sissepääs</th>
+						<th>Väljapääs</th>
 					</tr>
-
 					<xsl:for-each select="Firma/Tootaja">
 						<xsl:for-each select="Igapaev">
 							<tr>
@@ -40,10 +41,15 @@
 								<td>
 									<xsl:value-of select="@kuupaev"/>
 								</td>
+								<td>
+									<xsl:value-of select="Aeg/@sissenemine"/>
+								</td>
+								<td>
+									<xsl:value-of select="Aeg/@valjumine"/>
+								</td>
 							</tr>
 						</xsl:for-each>
 					</xsl:for-each>
-
 				</table>
 			</body>
 		</html>
