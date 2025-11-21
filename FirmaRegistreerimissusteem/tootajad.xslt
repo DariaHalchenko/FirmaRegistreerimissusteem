@@ -26,27 +26,13 @@
 					<xsl:for-each select="Firma/Tootaja">
 						<xsl:for-each select="Igapaev">
 							<tr>
-								<td>
-									<xsl:value-of select="../@nimi"/>
-								</td>
-								<td>
-									<xsl:value-of select="../@isikukood"/>
-								</td>
-								<td>
-									<xsl:value-of select="../@amet"/>
-								</td>
-								<td>
-									<xsl:value-of select="../@tunnitasu"/>
-								</td>
-								<td>
-									<xsl:value-of select="@kuupaev"/>
-								</td>
-								<td>
-									<xsl:value-of select="Aeg/@sissenemine"/>
-								</td>
-								<td>
-									<xsl:value-of select="Aeg/@valjumine"/>
-								</td>
+								<td><xsl:value-of select="../@nimi"/></td>
+								<td><xsl:value-of select="../@isikukood"/></td>
+								<td><xsl:value-of select="../@amet"/></td>
+								<td><xsl:value-of select="../@tunnitasu"/></td>
+								<td><xsl:value-of select="@kuupaev"/></td>
+								<td><xsl:value-of select="Aeg/@sissenemine"/></td>
+								<td><xsl:value-of select="Aeg/@valjumine"/></td>
 							</tr>
 						</xsl:for-each>
 					</xsl:for-each>
@@ -54,5 +40,4 @@
 			</body>
 		</html>
 	</xsl:template>
-
 </xsl:stylesheet>
